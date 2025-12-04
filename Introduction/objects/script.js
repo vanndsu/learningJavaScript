@@ -1,23 +1,23 @@
 // ==============================
-// 👤 OBJETO "character"
-// Exemplos de tipos dentro de um objeto:
+// 👤 OBJECT "character"
+// Example of different data types inside an object:
 // - Strings
 // - Numbers
 // - Arrays
-// - Objetos dentro de objetos (nested objects)
+// - Nested objects
 // ==============================
 
 let character = {
-  // Nome do personagem
+  // Character name
   name: "Vanderson",
 
-  // Idade do personagem
+  // Character age
   age: 25,
 
-  // Cor dos olhos (array contendo duas opções)
+  // Eye colors (array with two options)
   eyes: ["blue", "green"],
 
-  // Atributos em um objeto interno
+  // Nested object containing character attributes
   attributes: {
     strength: 10,
     agility: 8,
@@ -26,11 +26,22 @@ let character = {
 };
 
 // ==============================
-// 📢 Exibindo informações
-// Usamos template literals (``) para interpolar variáveis de forma clara.
+// ➕ Adding new properties dynamically
+// Aqui estamos adicionando a propriedade "weight" dentro de "attributes".
+// Você pode adicionar qualquer propriedade a qualquer momento em um objeto.
+// ==============================
+
+character.attributes.weight = [1, 2]; // adição dinâmica de uma nova propriedade
+
+// ==============================
+// 📢 Displaying character information
+// Template literals allow inserting variables easily using ${}
 // ==============================
 
 console.log(
   `Hello! My name is ${character.name}. I am ${character.age} years old, ` +
-  `my right eye is ${character.eyes[1]}, and I have ${character.attributes.strength} strength.`
+    `my right eye is ${character.eyes[1]}, and I have ${character.attributes.strength} strength.`
 );
+
+// Exibe somente o objeto de atributos
+console.log(character.attributes);
