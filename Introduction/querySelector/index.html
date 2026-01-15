@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Configura a página para ser responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da aba do navegador -->
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Div com id "aux", usada como referência no JavaScript -->
+    <div id="aux">
+      <!-- Lista não ordenada -->
+      <ul>
+        <!-- Itens da lista -->
+        <li>dd</li>
+        <li>d4</li>
+        <li>d5</li>
+      </ul>
+    </div>
+  </body>
+
+  <script>
+    // console.log() vazio
+    // Não imprime nada no console (não tem utilidade prática)
+    console.log();
+
+    // Seleciona o PRIMEIRO elemento <li> que estiver dentro do elemento com id "aux"
+    // querySelector retorna apenas UM elemento (o primeiro que encontrar)
+    let lista = document.querySelector("#aux li");
+
+    // Se você fizer:
+    // console.log(lista);
+    // O resultado será o primeiro <li> → <li>dd</li>
+  </script>
+</html>
