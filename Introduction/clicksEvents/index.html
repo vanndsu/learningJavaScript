@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Garante que a página seja responsiva em diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Título principal da página -->
+    <h1>Olá JavaScript</h1>
+
+    <!-- 
+      Botão sem evento inline.
+      Normalmente este botão será manipulado pelo JavaScript
+      usando addEventListener no arquivo script.js
+    -->
+    <button class="botao">Clique em mim</button>
+
+    <!-- 
+      Botão com evento inline (onclick).
+      Quando clicado, chama diretamente a função clique()
+      definida no arquivo script.js ou em um script inline.
+    -->
+    <button class="botao1" onclick="clique()">onclick</button>
+
+    <!-- 
+      Importa o arquivo JavaScript externo.
+      Ele é carregado após o HTML, garantindo que o DOM já exista.
+    -->
+    <script src="script.js"></script>
+  </body>
+</html>
