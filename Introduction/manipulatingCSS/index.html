@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Declara que o documento usa HTML5 -->
+<html lang="en">
+  <head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Garante responsividade em diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Título principal da página -->
+    <h1>Olá Mundo!</h1>
+
+    <!-- 
+      Div com id "teste"
+      IDs são únicos e geralmente usados para seleção direta no JavaScript
+    -->
+    <div id="teste">
+      <!-- Lista ordenada -->
+      <ol>
+        <!-- Itens da lista -->
+        <li style="background-color: brown; color: aliceblue">Algum item1</li>
+        <li>Algum item2</li>
+        <li>Algum item3</li>
+      </ol>
+
+      <!-- Texto em negrito -->
+      <strong>Testando...</strong>
+    </div>
+
+    <!-- 
+      Div com classe "teste2"
+      Classes podem ser reutilizadas em vários elementos
+    -->
+    <div class="teste2">
+      <!-- Lista não ordenada -->
+      <ul>
+        <li>Algum item4</li>
+        <li>Algum item5</li>
+        <li>Algum item6</li>
+      </ul>
+    </div>
+
+    <!-- 
+      Botão com evento inline
+      Ao clicar, chama a função `clicou()`
+      Essa função deve estar definida no arquivo script.js
+    -->
+
+    <button class="button" onclick="clicou()">Mostrar senha</button>
+
+    <!-- 
+      Importa o arquivo JavaScript externo
+      Ele é carregado após o HTML, garantindo que o DOM já esteja disponível
+    -->
+    <script src="script.js"></script>
+  </body>
+</html>
