@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- Declara o tipo do documento como HTML5 -->
+
+<html lang="pt-BR">
+  <!-- Elemento raiz do documento HTML -->
+
+  <head>
+    <!-- Define o conjunto de caracteres como UTF-8 (acentos, símbolos, etc.) -->
+    <meta charset="UTF-8" />
+
+    <!-- Garante que o layout seja responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Document</title>
+
+    <!-- Importa o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Corpo do documento: tudo que aparece visualmente na página -->
+
+    <!-- Título principal da página -->
+    <h1>Olá Mundo!</h1>
+
+    <!-- 
+      Div com id "teste"
+      IDs são únicos na página e geralmente usados para manipulação via JavaScript
+    -->
+    <div id="teste">
+
+      <!-- Lista ordenada -->
+      <ol>
+        <!-- 
+          Item da lista com estilo inline
+          (não é recomendado em projetos reais, mas útil para aprendizado)
+        -->
+        <li style="background-color: brown; color: aliceblue">
+          Algum item1
+        </li>
+
+        <!-- Itens comuns da lista -->
+        <li>Algum item2</li>
+        <li>Algum item3</li>
+      </ol>
+
+      <!-- Texto em negrito -->
+      <strong>Testando...</strong>
+    </div>
+
+    <!-- 
+      Div com classe "teste2"
+      Classes podem ser reutilizadas em vários elementos
+    -->
+    <div class="teste2">
+
+      <!-- Lista não ordenada -->
+      <ul>
+        <li>Algum item4</li>
+        <li>Algum item5</li>
+        <li>Algum item6</li>
+      </ul>
+    </div>
+
+    <!-- 
+      Botão com classe "button"
+      Ao clicar, executa a função `clicou()`
+    -->
+    <button class="button" onclick="clicou()">
+      Add
+    </button>
+
+    <!-- 
+      Segundo botão
+      Ao clicar, executa a função `remove()`
+    -->
+    <button class="button2" onclick="remove()">
+      Remove
+    </button>
+
+    <!-- 
+      Importa o arquivo JavaScript externo
+      Ele é carregado no final para garantir que todo o HTML já exista no DOM
+    -->
+    <script src="script.js"></script>
+  </body>
+</html>
