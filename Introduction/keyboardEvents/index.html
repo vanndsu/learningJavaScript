@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- Declara o documento como HTML5 -->
+<html lang="pt-BR">
+  <head>
+    <!-- Define o conjunto de caracteres -->
+    <meta charset="UTF-8" />
+
+    <!-- Responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da aba do navegador -->
+    <title>Eventos de Teclado</title>
+  </head>
+
+  <body>
+    <!-- Título principal da página -->
+    <h1>Olá Java</h1>
+
+    <!-- Lista não ordenada -->
+    <ul>
+      <li>Algum item</li>
+      <li>Algum item 2</li>
+    </ul>
+
+    <!-- 
+      Campo de entrada de texto
+      - keydown: quando a tecla é pressionada
+      - keypress: enquanto a tecla é mantida pressionada
+      - keyup: quando a tecla é solta
+    -->
+    <input
+      type="text"
+      placeholder="Digite algo..."
+      onkeydown="apertou()"
+      onkeypress="segurou()"
+      onkeyup="soltou()"
+    />
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
