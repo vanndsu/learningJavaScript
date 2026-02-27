@@ -1,0 +1,48 @@
+/* Área principal da luta */
+.fight-area {
+    /* Exibe os personagens lado a lado */
+    display: flex;
+
+    /* Espaço entre o personagem e o monstro */
+    gap: 10px;
+
+    /* Ocupa toda a largura disponível */
+    width: 100%;
+}
+
+/* Barra interna da vida (vida atual) */
+.bar {
+    /* Cor da barra de vida */
+    background-color: red;
+
+    /* Herda a altura da life-bar */
+    height: inherit;
+}
+
+/* Contêiner da barra de vida */
+.life-bar {
+    /* Borda para visualizar o limite da vida */
+    border: 1px solid black;
+
+    /* Altura fixa da barra de vida */
+    height: 10px;
+}
+
+/* Área do personagem e do monstro */
+#char,
+#monster {
+    /* Faz com que ambos ocupem o mesmo espaço */
+    flex: 1;
+}
+
+/* Área de logs da luta */
+.log {
+    /* Altura fixa do log */
+    height: 200px;
+
+    /* Ativa scroll vertical quando ultrapassar o limite */
+    overflow-y: scroll;
+
+    /* Borda pontilhada para destaque visual */
+    border: 1px dotted black;
+}
