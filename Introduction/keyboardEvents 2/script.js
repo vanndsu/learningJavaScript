@@ -30,5 +30,5 @@ const input = document.querySelector("input");
 
 // Adiciona um ouvinte de evento ao input
 // Sempre que uma tecla for solta dentro do input,
-// a função `soltou` será executada.
+// a função `soltou` será executada...
 input.addEventListener("keyup", soltou);
