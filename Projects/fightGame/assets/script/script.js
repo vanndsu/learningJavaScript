@@ -1,12 +1,12 @@
 // Importa as classes necessárias do arquivo class.js
-import { Knight, Monster, littleMonster, Stage } from './class.js';
+import { Knight, Monster, LittleMonster, Stage, Log } from "./class.js";
 
 // Cria o personagem do jogador (um Cavaleiro)
-let char = new Knight("Douglas");
+let char = new Knight("Claudio");
 
 // Cria o inimigo (um monstro pequeno)
-let monster = new littleMonster();
-
+let monster = new Monster();
+let log = new Log(document.querySelector(".log"));
 // Exibe no console o nome do personagem criado
 console.log(char.name);
 
@@ -19,8 +19,9 @@ console.log(char.name);
 const stage = new Stage(
   char,
   monster,
-  document.querySelector('#char'),
-  document.querySelector('#monster')
+  document.querySelector("#char"),
+  document.querySelector("#monster"),
+  log
 );
 
 // Inicia a batalha, configurando eventos e atualizando a interface
