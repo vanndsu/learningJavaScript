@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Garante responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da página -->
+    <title>Document</title>
+
+    <!-- Importa o arquivo CSS responsável pelo estilo da página -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <!-- Área principal da luta -->
+    <div class="fight-area">
+
+      <!-- Personagem do jogador -->
+      <div id="char">
+        <!-- Barra de vida do personagem -->
+        <div class="life-bar">
+          <!-- Barra interna que representa a porcentagem de vida -->
+          <div class="bar" style="width: 10%"></div>
+        </div>
+
+        <!-- Nome do personagem -->
+        <span class="name">--</span>
+
+        <!-- Botão de ataque do personagem -->
+        <div>
+          <button class="attack-button">Atacar</button>
+        </div>
+      </div>
+
+      <!-- Monstro (inimigo) -->
+      <div id="monster">
+        <!-- Barra de vida do monstro -->
+        <div class="life-bar">
+          <!-- Barra interna que representa a porcentagem de vida -->
+          <div class="bar" style="width: 10%"></div>
+        </div>
+
+        <!-- Nome do monstro -->
+        <span class="name">--</span>
+
+        <!-- Botão de ataque do monstro -->
+        <div>
+          <button class="attack-button">Atacar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lista onde serão exibidos os logs da luta -->
+    <ul class="log"></ul>
+
+    <!-- Script com as classes (Personagem, Monstro, etc) -->
+    <script type="module" src="assets/script/class.js"></script>
+
+    <!-- Script principal com a lógica do jogo -->
+    <script type="module" src="assets/script/script.js"></script>
+  </body>
+</html>
